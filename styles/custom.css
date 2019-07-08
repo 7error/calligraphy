@@ -1,0 +1,70 @@
+@font-face {
+    font-family: 'TianYingZhang_KaiShu';
+    src: url('/fonts/TianYingZhang_KaiShu.woff2') format('woff2'),
+         url('/fonts/TianYingZhang_KaiShu.woff') format('woff');
+    font-weight: normal;
+    font-style: normal
+}
+
+section#hero {
+    margin-top: 30px;
+    text-align: center;
+}
+
+h1#title {
+    text-align: center;
+    width: 90%;
+    margin: 0 auto;
+    font-family: 'TianYingZhang_KaiShu';
+}
+
+textarea {
+    margin-top: 10px;
+    width: 270px;
+    height: 100px;
+    resize: none;
+}
+
+div#articles {
+    text-align: left;
+    font-size: 36px;
+    font-family: 'TianYingZhang_KaiShu';
+}
+
+div#root {
+    margin: 0 auto;
+    text-align: center;
+    width: 360px;
+}
+
+div#characters {
+    width: 360px;
+    height: 90px;
+}
+
+div.bg_char {
+    position: relative;
+    display: inline-block;
+    text-align: center;
+    margin: 0 auto;
+    width: 90px;
+    height: 90px;
+    background-image: url('/images/back.png');
+    background-repeat: no-repeat;
+}
+
+div.box_char {
+    position: absolute;
+    width: 89px;
+    height: 89px;
+}
+
+span.char {
+    position: relative;
+    font-family: 'TianYingZhang_KaiShu';
+    font-size: 80px;
+    width: 80px;
+    top: -20px;
+    left: 0;
+    cursor: pointer;
+}

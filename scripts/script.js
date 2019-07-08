@@ -16,9 +16,9 @@ window.onload = () => {
         if (e.target.className == 'char') {
             ele = e.target
             offset = parseInt(window.getComputedStyle(ele).left)
-            if (e.layerX < 32) {
+            if (e.layerX < 42) {
                 ele.style.left = (offset - 3) + "px"
-            } else if (e.layerX > 56) {
+            } else if (e.layerX > 46) {
                 ele.style.left = (offset + 3) + "px"
             }
         }

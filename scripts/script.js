@@ -1,3 +1,4 @@
+const title          = document.getElementById('title')
 const txt_input      = document.getElementById('input')
 const btn_character  = document.getElementById('character')
 const btn_article    = document.getElementById('article')
@@ -8,6 +9,7 @@ const div_articles   = document.getElementById('articles')
 
 
 window.onload = () => {
+    title.onclick = switchFont
     btn_character.onclick = on_character
     btn_article.onclick = on_article
     btn_clear.onclick = on_clear
@@ -23,6 +25,19 @@ window.onload = () => {
             }
         }
     })
+
+    b_font = false
+}
+
+
+function switchFont() {
+    font = b_font ? 'TYZ_KaiShu' : 'TYZ_XingShu'
+    text = b_font ? '田英章楷书' : '田英章行书'
+    b_font = !b_font
+    title.innerHTML = text
+    title.style.fontFamily = font
+    div_characters.style.fontFamily = font
+    div_articles.style.fontFamily = font
 }
 
 

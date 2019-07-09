@@ -1,7 +1,13 @@
 @font-face {
-    font-family: 'TianYingZhang_KaiShu';
-    src: url('/fonts/TianYingZhang_KaiShu.woff2') format('woff2'),
-         url('/fonts/TianYingZhang_KaiShu.woff') format('woff');
+    font-family: 'TYZ_KaiShu';
+    src: url('/fonts/TYZ_KaiShu.woff') format('woff');
+    font-weight: normal;
+    font-style: normal
+}
+
+@font-face {
+    font-family: 'TYZ_XingShu';
+    src: url('/fonts/TYZ_XingShu.woff') format('woff');
     font-weight: normal;
     font-style: normal
 }
@@ -15,7 +21,8 @@ h1#title {
     text-align: center;
     width: 90%;
     margin: 0 auto;
-    font-family: 'TianYingZhang_KaiShu';
+    font-family: 'TYZ_KaiShu';
+    cursor: pointer;
 }
 
 textarea {
@@ -25,6 +32,10 @@ textarea {
     resize: none;
 }
 
+input {
+    font-size: 48px;
+}
+
 div#root {
     margin: 0 auto;
     text-align: center;
@@ -32,14 +43,15 @@ div#root {
 }
 
 div#characters {
+    font-family: 'TYZ_KaiShu';
     width: 360px;
 }
 
 div#articles {
+    font-family: 'TYZ_KaiShu';
     width: 380px;
     text-align: left;
     font-size: 36px;
-    font-family: 'TianYingZhang_KaiShu';
 }
 
 div.bg_char {
@@ -61,10 +73,9 @@ div.box_char {
 
 span.char {
     position: relative;
-    font-family: 'TianYingZhang_KaiShu';
-    font-size: 80px;
+    font-size: 70px;
     width: 80px;
-    top: -20px;
+    top: -10px;
     left: 0;
     cursor: pointer;
 }

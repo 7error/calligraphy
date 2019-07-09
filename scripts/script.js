@@ -15,7 +15,7 @@ window.onload = () => {
     btn_clear.onclick = on_clear
 
     div_characters.addEventListener('click', (e) => {
-        if (e.target.className == 'char') {
+        if (e.target.className === 'char') {
             ele = e.target
             offset = parseInt(window.getComputedStyle(ele).left)
             if (e.layerX < 42) {
@@ -54,11 +54,7 @@ function on_character() {
             ot_chars.push(char)
         }
     }
-    if (ot_chars.length == 0) {
-        ov_results.innerHTML = '请输入一些中文'
-    } else {
-        ov_results.innerHTML = ''
-    }
+    ov_results.innerHTML = ot_chars.length === 0 ? '请输入一些中文' : ''
 }
 
 
@@ -68,11 +64,7 @@ function on_article() {
     in_str = txt_input.value
     in_str = in_str.replace(/\r\n/g, "<br>")
     in_str = in_str.replace(/\n/g,"<br>");
-    if (in_str.length == 0) {
-        ov_results.innerHTML = '请输入一些中文'
-    } else {
-        div_articles.innerHTML = in_str
-    }
+    ov_results.innerHTML = in_str.length === 0 ? '请输入一些中文' : ''
 }
 
 

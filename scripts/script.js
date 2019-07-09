@@ -96,6 +96,7 @@ function on_article() {
     in_str = in_str.replace(/\r\n/g, "<br>")
     in_str = in_str.replace(/\n/g,"<br>");
     ov_results.innerHTML = in_str.length === 0 ? '请输入一些中文' : ''
+    div_articles.innerHTML = in_str.length === 0 ? '' : in_str
 }
 
 

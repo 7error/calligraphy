@@ -144,13 +144,6 @@ function isChineseChar(str) {
 }
 
 
-function newDiv(className) {
-    let new_div =
-    new_div.setAttribute('class', className)
-    return new_div
-}
-
-
 function appendNewChar(char) {
     let div_bg = document.createElement('div')
     div_bg.setAttribute('class', 'bg_char')
